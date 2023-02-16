@@ -131,7 +131,7 @@
                         <td class="table__col"> 1400</td>
                     </tr>
                     <tr class="table__row table__row--header">
-                        <td class="table__col">13. </td>
+                        <td class="table__col">18. </td>
                         <td class="table__col"> Tetiva 45x195x6000 mm </td>
                         <td class="table__col table__col--amount"> 2</td>
                         <td class="table__col"> 1400</td>
@@ -167,7 +167,7 @@
         </div>
 
         <form class="settings__form form">
-            <table class="settings__table table">
+            <table class="settings__table table" id="settings-table">
                 <thead class="table__header">
                     <tr class="table__row">
                         <td class="table__col table__col--number"> № </td>
@@ -176,62 +176,21 @@
                     </tr>
                 </thead>
                 <tbody class="table__body">
-                    <tr class="table__row table__row--header">
-                        <td class="table__col table__col--number"> 1. </td>
-                        <td class="table__col table__col--name"> Terrasa floor desk 36x145x6000 mm </td>
-                        <td class="table__col table__col--price">
-                            <input type="text" class="form settings__input" id="material-1" value="1500">
-                        </td>
-                    </tr>
-                    <tr class="table__row table__row--header">
-                        <td class="table__col table__col--number"> 1. </td>
-                        <td class="table__col table__col--name"> Terrasa floor desk 36x145x6000 mm </td>
-                        <td class="table__col table__col--price">
-                            <input type="text" class="form settings__input" id="material-1" value="1500">
-                        </td>
-                    </tr>
-                    <tr class="table__row table__row--header">
-                        <td class="table__col table__col--number"> 1. </td>
-                        <td class="table__col table__col--name"> Terrasa floor desk 36x145x6000 mm </td>
-                        <td class="table__col table__col--price">
-                            <input type="text" class="form settings__input" id="material-1" value="1500">
-                        </td>
-                    </tr>
-                    <tr class="table__row table__row--header">
-                        <td class="table__col table__col--number"> 1. </td>
-                        <td class="table__col table__col--name"> Terrasa floor desk 36x145x6000 mm </td>
-                        <td class="table__col table__col--price">
-                            <input type="text" class="form settings__input" id="material-1" value="1500">
-                        </td>
-                    </tr>
-                    <tr class="table__row table__row--header">
-                        <td class="table__col table__col--number"> 1. </td>
-                        <td class="table__col table__col--name"> Terrasa floor desk 36x145x6000 mm </td>
-                        <td class="table__col table__col--price">
-                            <input type="text" class="form settings__input" id="material-1" value="1500">
-                        </td>
-                    </tr>
-                    <tr class="table__row table__row--header">
-                        <td class="table__col table__col--number"> 1. </td>
-                        <td class="table__col table__col--name"> Terrasa floor desk 36x145x6000 mm </td>
-                        <td class="table__col table__col--price">
-                            <input type="text" class="form settings__input" id="material-1" value="1500">
-                        </td>
-                    </tr>
+
                 </tbody>
 
             </table>
-            <input type="submit" class="button form__submit settings__submit" value="Seve settings">
+            <input type="submit" class="button form__submit settings__submit" id="set-settings" value="Save settings">
         </form>
 
     </section>
 
     <template id="estimate-table-row">
         <tr class="table__row table__row--header">
-            <td class="table__col"> 1. </td>
-            <td class="table__col"> Terrasa floor desk 36x145x6000 mm </td>
+            <td class="table__col table__col--number"> 1. </td>
+            <td class="table__col table__col--name"> Terrasa floor desk 36x145x6000 mm </td>
             <td class="table__col table__col--amount"> 3 </td>
-            <td class="table__col"> 1500 </td>
+            <td class="table__col table__col--cost"> 1500 </td>
         </tr>
     </template>
 
@@ -244,4 +203,7 @@
             </td>
         </tr>
     </template>
+
+
+    <script src="js/main.js" type="module"></script>
 </body>

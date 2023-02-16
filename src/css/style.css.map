@@ -1,0 +1,1 @@
+{"version":3,"sources":["blocks/page.scss"],"names":[],"mappings":"AAAA;EACI;;;AAGJ;EACI;;;AAGJ;EACI","file":"style.css","sourcesContent":["td {\r\n    border: 1px solid #8a8a8a\r\n}\r\n\r\ntable {\r\n    border-collapse: collapse;\r\n}\r\n\r\n.page {\r\n    background-color: #ffffff;\r\n}"]}
