@@ -3,10 +3,22 @@
     flex-direction: column;
     flex-wrap: wrap;
     gap: 20px;
+
+    @media (min-width: $tablet-width) {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    @media (min-width: $desktop-width) {
+        flex-wrap: nowrap;
+    }
+
+
 }
 
 .form__fieldset {
     padding: 0;
+    flex-grow: 1;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -20,4 +32,12 @@
 
 .form__label {
     text-transform: uppercase;
+
+    @media (min-width: $tablet-width) {
+        min-width: 200px;
+    }
 }
+
+@media (min-width: $tablet-width) {}
+
+@media (min-width: $desktop-width) {}

@@ -1,17 +1,12 @@
-td {
-    border: 1px solid #8a8a8a
-}
-
-table {
-    border-collapse: collapse;
-}
-
 .page {
+    margin: auto auto;
+    /* border: 1px solid #000; */
+    box-shadow: 0 0 15px 0 #0000002b;
     background-color: #ffffff;
-    margin: 0;
     padding: 0;
     min-width: 320px;
     min-height: 100vh;
+    max-width: 1200px;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;

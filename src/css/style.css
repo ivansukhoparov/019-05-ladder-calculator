@@ -12,11 +12,14 @@ table {
 }
 
 .page {
+  margin: auto auto;
+  /* border: 1px solid #000; */
+  box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.168627451);
   background-color: #ffffff;
-  margin: 0;
   padding: 0;
   min-width: 320px;
   min-height: 100vh;
+  max-width: 1200px;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -30,7 +33,17 @@ table {
   padding: 20px;
   margin: 0;
   border-top: 1px solid black;
-  border-bottom: 1px solid black;
+  /*border-bottom: 1px solid black;*/
+}
+@media (min-width: 768px) {
+  .title {
+    padding: 20px 60px;
+  }
+}
+@media (min-width: 900px) {
+  .title {
+    padding: 30px 80px;
+  }
 }
 
 .button {
@@ -43,7 +56,9 @@ table {
 }
 
 .modal {
-  position: fixed;
+  top: 0;
+  left: 0;
+  position: absolute;
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.2392156863);
@@ -52,7 +67,6 @@ table {
 .modal--closed {
   display: none;
 }
-
 .modal--open {
   height: 100vh;
   overflow: hidden;
@@ -109,13 +123,22 @@ table {
 }
 
 .menu {
-  padding: 18px 20px;
-  height: 58px;
+  padding: 20px;
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
   align-items: center;
   border-bottom: 1px solid black;
+}
+@media (min-width: 768px) {
+  .menu {
+    padding: 20px 60px;
+  }
+}
+@media (min-width: 900px) {
+  .menu {
+    padding: 30px 80px;
+  }
 }
 
 .menu__button {
@@ -147,12 +170,18 @@ table {
   flex-direction: column;
 }
 
-.parameters {
+.estimate__wrapper {
   padding: 20px;
 }
-
-.estimate__table {
-  margin: 20px;
+@media (min-width: 768px) {
+  .estimate__wrapper {
+    padding: 20px 60px;
+  }
+}
+@media (min-width: 900px) {
+  .estimate__wrapper {
+    padding: 30px 80px;
+  }
 }
 
 .drawings__wrapper {
@@ -161,12 +190,31 @@ table {
   flex-direction: column;
   gap: 20px;
 }
+@media (min-width: 768px) {
+  .drawings__wrapper {
+    padding: 20px 60px;
+  }
+}
+@media (min-width: 900px) {
+  .drawings__wrapper {
+    padding: 30px 80px;
+  }
+}
+@media (min-width: 900px) {
+  .drawings__wrapper {
+    flex-direction: row;
+  }
+}
 
 .drawings__title {
   border-top: none;
   border-bottom: none;
   padding: 0;
   margin: 0 0 10px 0;
+}
+
+.drawings__side {
+  flex-grow: 1;
 }
 
 .drawings__area {
@@ -182,9 +230,21 @@ table {
   flex-wrap: wrap;
   gap: 20px;
 }
+@media (min-width: 768px) {
+  .form {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
+@media (min-width: 900px) {
+  .form {
+    flex-wrap: nowrap;
+  }
+}
 
 .form__fieldset {
   padding: 0;
+  flex-grow: 1;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -199,6 +259,15 @@ table {
 .form__label {
   text-transform: uppercase;
 }
+@media (min-width: 768px) {
+  .form__label {
+    min-width: 200px;
+  }
+}
+
+.table {
+  width: 100%;
+}
 
 .table__col {
   padding: 7px;
@@ -212,6 +281,20 @@ table {
 .footer {
   padding: 20px;
 }
+@media (min-width: 768px) {
+  .footer {
+    padding: 20px 60px;
+  }
+}
+@media (min-width: 900px) {
+  .footer {
+    padding: 30px 80px;
+  }
+}
+
+.settings__form {
+  flex-direction: column;
+}
 
 .settings__input {
   padding: 0;
@@ -220,6 +303,26 @@ table {
 }
 .settings__input:focus {
   border: none;
+}
+
+.parameters {
+  padding: 20px;
+}
+@media (min-width: 768px) {
+  .parameters {
+    padding: 20px 60px;
+  }
+}
+@media (min-width: 900px) {
+  .parameters {
+    padding: 30px 80px;
+  }
+}
+
+@media (min-width: 900px) {
+  .parameters__form {
+    gap: 60px;
+  }
 }
 
 .visually-hidden {

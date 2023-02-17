@@ -1,8 +1,13 @@
 .drawings__wrapper {
-    padding: 20px;
+    @include paddings;
+
     display: flex;
     flex-direction: column;
     gap: 20px;
+
+    @media (min-width: $desktop-width) {
+        flex-direction: row;
+    }
 }
 
 .drawings__title {
@@ -11,6 +16,12 @@
     padding: 0;
     margin: 0 0 10px 0;
 }
+
+.drawings__side {
+    flex-grow: 1;
+}
+
+
 
 .drawings__area {
     display: block;

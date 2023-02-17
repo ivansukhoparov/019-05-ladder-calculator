@@ -1,13 +1,13 @@
+.table {
+    width: 100%;
+}
+
 .table__col {
     padding: 7px;
 
     @media (max-width: $mobile-width-only) {
         &--mobile-hidden {
             display: none;
-
-
         }
     }
-
-
 }

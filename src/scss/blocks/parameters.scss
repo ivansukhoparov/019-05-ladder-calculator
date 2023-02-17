@@ -1,4 +1,10 @@
 .parameters {
-    padding: 20px;
+    @include paddings;
+}
+
+.parameters__form {
+    @media (min-width: $desktop-width) {
+        gap: 60px;
+    }
 
 }

@@ -10,6 +10,6 @@
 build/
 node_modules/
 tasks/
-npm-debug.*
 src/css/
+npm-debug.*
 Thumbs.db

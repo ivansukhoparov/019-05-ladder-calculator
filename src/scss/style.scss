@@ -1,5 +1,7 @@
 @import "global/variables.scss";
 @import "global/tags.scss";
+@import "global/mixins.scss";
+
 
 @import "blocks/page.scss";
 @import "blocks/title.scss";
@@ -7,14 +9,13 @@
 @import "blocks/modal.scss";
 @import "blocks/menu.scss";
 @import "blocks/main.scss";
-@import "blocks/parameters.scss";
 @import "blocks/estimate.scss";
 @import "blocks/drawings.scss";
 @import "blocks/form.scss";
 @import "blocks/table.scss";
 @import "blocks/footer.scss";
 @import "blocks/settings.scss";
-
+@import "blocks/parameters.scss";
 
 @import "blocks/visually-hidden.scss";
 @import "outlines.scss";

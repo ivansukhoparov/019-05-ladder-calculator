@@ -1,0 +1,11 @@
+@mixin paddings {
+    padding: 20px;
+
+    @media (min-width: $tablet-width) {
+        padding: 20px 60px;
+    }
+
+    @media (min-width: $desktop-width) {
+        padding: 30px 80px;
+    }
+}

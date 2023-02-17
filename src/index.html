@@ -42,31 +42,35 @@
 
         <section class="estimate">
             <h2 class="title">Estimate</h2>
-            <table class="estimate__table table" id="estimate-table">
-                <thead class="table__header">
-                    <tr class="table__row">
-                        <td class="table__col table__col--number table__col--mobile-hidden"> № </td>
-                        <td class="table__col table__col--name"> Name of the material </td>
-                        <td class="table__col table__col--amount table__col--mobile-hidden"> Amount </td>
-                        <td class="table__col table__col--units table__col--mobile-hidden"> Units </td>
-                        <td class="table__col table__col--cost"> Cost</td>
-                    </tr>
-                </thead>
+            <div class="estimate__wrapper">
+                <table class="estimate__table table" id="estimate-table">
+                    <thead class="table__header">
+                        <tr class="table__row">
+                            <td class="table__col table__col--number table__col--mobile-hidden"> № </td>
+                            <td class="table__col table__col--name"> Name of the material </td>
+                            <td class="table__col table__col--amount table__col--mobile-hidden"> Amount </td>
+                            <td class="table__col table__col--units table__col--mobile-hidden"> Units </td>
+                            <td class="table__col table__col--cost"> Cost</td>
+                        </tr>
+                    </thead>
 
-                <tbody class="table__body">
-                </tbody>
+                    <tbody class="table__body">
+                    </tbody>
 
-            </table>
+                </table>
+            </div>
+
+
         </section>
 
         <section class="drawings">
             <h2 class="main__title title">Drawings</h2>
             <div class="drawings__wrapper">
-                <div class="drawings__front">
+                <div class="drawings__side">
                     <h3 class="title drawings__title">Front view</h3>
                     <div class="drawings__area" id="front-view"></div>
                 </div>
-                <div class="drawings__front">
+                <div class="drawings__side">
                     <h3 class="title drawings__title">Side view</h3>
                     <div class="drawings__area" id="side-view"></div>
                 </div>
