@@ -1,11 +1,73 @@
 .modal {
-
-    &--opened {
-        display: block;
-    }
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: #0000003d;
+    display: flex;
 
     &--closed {
         display: none;
     }
+}
 
+.modal--open {
+    height: 100vh;
+    overflow: hidden;
+}
+
+.modal__close {
+    width: 30px;
+    height: 30px;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1.5px solid #000;
+    border-radius: 50%;
+    cursor: pointer;
+
+    &::before,
+    &::after {
+        content: '';
+        display: block;
+        background-color: #000;
+        width: 13px;
+        height: 1.5px;
+        position: absolute;
+    }
+
+    &::before {
+        transform: rotate(45deg);
+    }
+
+    &::after {
+        transform: rotate(-45deg);
+    }
+
+    &:hover {
+        opacity: 0.5;
+    }
+
+    &:active {
+        opacity: 0.3;
+    }
+
+}
+
+.modal__window {
+    margin: auto;
+    background: #fff;
+    padding: 20px;
+}
+
+.modal__header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0 0 20px 0;
+}
+
+.modal__title {
+    padding: 0;
+    border: none;
 }

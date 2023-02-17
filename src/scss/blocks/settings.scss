@@ -1,0 +1,9 @@
+.settings__input {
+    padding: 0;
+    border: none;
+    width: 40px;
+
+    &:focus {
+        border: none;
+    }
+}

@@ -1,11 +1,23 @@
 .form {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     flex-wrap: wrap;
+    gap: 20px;
+}
+
+.form__fieldset {
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: none;
+}
+
+.form__input {
+    width: 30px;
+    padding: 10px;
 }
 
 .form__label {
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
+    text-transform: uppercase;
 }

@@ -11,5 +11,5 @@ build/
 node_modules/
 tasks/
 npm-debug.*
-srs/css/
+srs/css/*.css
 Thumbs.db
