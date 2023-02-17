@@ -5,10 +5,11 @@ const rowTemplate = document.querySelector('#settings-table-row').content.queryS
 const targetTable = document.querySelector("#settings-table").querySelector('tbody');
 const setButton = document.querySelector('#set-settings');
 
-const renderRow = function (number, materialName, price, unit) {
+const renderRow = function (number, materialName, price, units) {
     const row = rowTemplate.cloneNode(true);
     row.querySelector('.table__col--number').textContent = number + '.';
     row.querySelector('.table__col--name').textContent = materialName;
+    row.querySelector('.table__col--amount').textContent = '1 ' + units;
     row.querySelector('.settings__input').value = price;
     row.querySelector('.settings__input').id = 'material-' + number;
     return row;
@@ -17,11 +18,12 @@ const renderRow = function (number, materialName, price, unit) {
 const renderTable = function (data) {
     const materialNames = data.materialName;
     const prices = data.prices;
+    const units = data.units;
 
     targetTable.textContent = '';
 
     materialNames.forEach((element, index) => {
-        const row = renderRow(index + 1, element, prices[index]);
+        const row = renderRow(index + 1, element, prices[index], units[index]);
         targetTable.appendChild(row);
     });
 }
