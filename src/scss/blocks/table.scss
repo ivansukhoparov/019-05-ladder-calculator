@@ -1,8 +1,13 @@
 .table__col {
     padding: 7px;
 
-    &--number {
-        display: none;
+    @media (max-width: $mobile-width-only) {
+        &--mobile-hidden {
+            display: none;
+
+
+        }
     }
+
 
 }

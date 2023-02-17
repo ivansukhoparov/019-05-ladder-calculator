@@ -203,8 +203,10 @@ table {
 .table__col {
   padding: 7px;
 }
-.table__col--number {
-  display: none;
+@media (max-width: 767px) {
+  .table__col--mobile-hidden {
+    display: none;
+  }
 }
 
 .footer {
