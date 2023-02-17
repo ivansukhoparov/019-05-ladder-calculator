@@ -1,3 +1,17 @@
+@font-face {
+  font-family: "PT Sans";
+  font-weight: 400;
+  font-display: swap;
+  src: url("../../fonts/ptsans.woff");
+  src: url("../../fonts/ptsans.woff2");
+}
+@font-face {
+  font-family: "PT Sans";
+  font-weight: 700;
+  font-display: swap;
+  src: url("../../fonts/ptsansbold.woff");
+  src: url("../../fonts/ptsansbold.woff2");
+}
 p {
   margin: 0;
   padding: 0;
@@ -14,6 +28,7 @@ table {
 .page {
   margin: auto auto;
   /* border: 1px solid #000; */
+  font-family: "PT Sans", Arial, sans-serif;
   box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.168627451);
   background-color: #ffffff;
   padding: 0;
@@ -47,12 +62,12 @@ table {
 }
 
 .button {
-  padding: 20px;
+  padding: 12px;
   width: 100%;
   border: 1px solid #ACA6A6;
   background: #fff;
   text-transform: uppercase;
-  font-size: 16px;
+  font-size: 20px;
 }
 
 .modal {
@@ -253,7 +268,9 @@ table {
 
 .form__input {
   width: 30px;
-  padding: 10px;
+  padding: 12px;
+  font-size: 20px;
+  text-align: center;
 }
 
 .form__label {
@@ -297,9 +314,11 @@ table {
 }
 
 .settings__input {
-  padding: 0;
-  border: none;
   width: 40px;
+  padding: 0;
+  font-size: 16px;
+  text-align: left;
+  border: none;
 }
 .settings__input:focus {
   border: none;
