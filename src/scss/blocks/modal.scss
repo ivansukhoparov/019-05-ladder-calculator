@@ -4,7 +4,7 @@
     position: absolute;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.2392156863);
+    background-color: $darkned-background;
     display: flex;
 
     &--closed {
@@ -24,7 +24,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 1.5px solid #000;
+    border: 1.5px solid $main-color;
     border-radius: 50%;
     cursor: pointer;
 
@@ -32,7 +32,7 @@
     &::after {
         content: '';
         display: block;
-        background-color: #000;
+        background-color: $main-color;
         width: 13px;
         height: 1.5px;
         position: absolute;
@@ -58,7 +58,7 @@
 
 .modal__window {
     margin: auto;
-    background: #fff;
+    background: $main-background;
     padding: 20px;
 }
 

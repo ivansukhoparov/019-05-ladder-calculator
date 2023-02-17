@@ -30,6 +30,17 @@
     padding: 12px;
     font-size: 20px;
     text-align: center;
+    border: 2px solid $main-color;
+    border-radius: 5px;
+
+    &:hover {
+        border-color: $main-hover;
+        color: $main-hover;
+    }
+
+    &:focus {
+        outline: none;
+    }
 }
 
 .form__label {
@@ -39,7 +50,3 @@
         min-width: 200px;
     }
 }
-
-@media (min-width: $tablet-width) {}
-
-@media (min-width: $desktop-width) {}

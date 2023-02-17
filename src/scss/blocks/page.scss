@@ -1,9 +1,9 @@
 .page {
     margin: auto auto;
-    /* border: 1px solid #000; */
     font-family: "PT Sans", Arial, sans-serif;
-    box-shadow: 0 0 15px 0 #0000002b;
-    background-color: #ffffff;
+    color: $main-color;
+    box-shadow: 0 0 15px 0 $darkned-background;
+    background-color: $main-background;
     padding: 0;
     min-width: 320px;
     min-height: 100vh;
