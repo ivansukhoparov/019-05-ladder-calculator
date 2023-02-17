@@ -303,10 +303,16 @@ table {
 
 .table {
   width: 100%;
+  border: 2px solid rgb(36, 36, 36);
+}
+
+.table__header {
+  border-bottom: 2px solid rgb(36, 36, 36);
 }
 
 .table__col {
   padding: 7px;
+  border-right: 2px solid rgb(36, 36, 36);
 }
 @media (max-width: 767px) {
   .table__col--mobile-hidden {

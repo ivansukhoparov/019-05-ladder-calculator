@@ -1,9 +1,15 @@
 .table {
     width: 100%;
+    border: 2px solid $main-color;
+}
+
+.table__header {
+    border-bottom: 2px solid $main-color;
 }
 
 .table__col {
     padding: 7px;
+    border-right: 2px solid $main-color;
 
     @media (max-width: $mobile-width-only) {
         &--mobile-hidden {
