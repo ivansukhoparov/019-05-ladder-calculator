@@ -1,5 +1,5 @@
-import dataPreset from './dataPreset.js';
-const data = dataPreset.dataPreset;
+import dataSet from './dataSet.js';
+const data = dataSet.dataSet;
 
 const rowTemplate = document.querySelector('#settings-table-row').content.querySelector('.table__row');
 const targetTable = document.querySelector("#settings-table").querySelector('tbody');
