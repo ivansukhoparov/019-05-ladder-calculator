@@ -5,8 +5,7 @@ const renderRow = function (number, materialName, amount, units, cost) {
     const row = rowTemplate.cloneNode(true);
     row.querySelector('.table__col--number').textContent = number;
     row.querySelector('.table__col--name').textContent = materialName;
-    row.querySelector('.table__col--amount').textContent = amount;
-    row.querySelector('.table__col--units').textContent = units;
+    row.querySelector('.table__col--amount').textContent = amount + ' ' + units;
     row.querySelector('.table__col--cost').textContent = cost;
     return row;
 }
