@@ -11,7 +11,7 @@
 <body class="page">
 
     <header class="page__header header">
-        <h1 class="header__title title">Ladder Calculator for ESK</h1>
+        <h1 class="header__title title visually-hidden">Ladder Calculator for ESK</h1>
         <div class="menu">
             <button class="button menu__button menu__button--print">
                 <span class="visually-hidden">Print</span>
@@ -26,12 +26,14 @@
     <main class="page__main main">
 
         <section class="parameters">
-            <h2 class="main__title title">Enter parameters</h2>
+            <h2 class="main__title title visually-hidden">Enter parameters</h2>
             <form class="parameters__form form">
-                <label class="form__label">Number of steps, pc:</label>
-                <input type="text" class="form__input" id="number-of-steps" placeholder="3" required>
-                <label class="form__label">Ladder length, m:</label>
-                <input type="text" class="form__input" id="ladder-length" placeholder="3" required>
+                <label class="form__label">Number of steps, pc:
+                    <input type="text" class="form__input" id="number-of-steps" placeholder="3" required>
+                </label>
+                <label class="form__label">Ladder length, m:
+                    <input type="text" class="form__input" id="ladder-length" placeholder="3" required>
+                </label>
                 <input type="submit" class="button form__submit" id="parameters-submit" vatue="Calculate">
             </form>
         </section>
@@ -63,79 +65,7 @@
                         <td class="table__col"> 1400</td>
                     </tr>
 
-                    <tr class="table__row table__row--header">
-                        <td class="table__col">3. </td>
-                        <td class="table__col"> Tetiva 45x195x6000 mm </td>
-                        <td class="table__col table__col--amount"> 2</td>
-                        <td class="table__col"> 1400</td>
-                    </tr>
 
-                    <tr class="table__row table__row--header">
-                        <td class="table__col">4. </td>
-                        <td class="table__col"> Tetiva 45x195x6000 mm </td>
-                        <td class="table__col table__col--amount"> 2</td>
-                        <td class="table__col"> 1400</td>
-                    </tr>
-
-                    <tr class="table__row table__row--header">
-                        <td class="table__col">5. </td>
-                        <td class="table__col"> Tetiva 45x195x6000 mm </td>
-                        <td class="table__col table__col--amount"> 2</td>
-                        <td class="table__col"> 1400</td>
-                    </tr>
-
-                    <tr class="table__row table__row--header">
-                        <td class="table__col">6. </td>
-                        <td class="table__col"> Tetiva 45x195x6000 mm </td>
-                        <td class="table__col table__col--amount"> 2</td>
-                        <td class="table__col"> 1400</td>
-                    </tr>
-
-                    <tr class="table__row table__row--header">
-                        <td class="table__col">7. </td>
-                        <td class="table__col"> Tetiva 45x195x6000 mm </td>
-                        <td class="table__col table__col--amount"> 2</td>
-                        <td class="table__col"> 1400</td>
-                    </tr>
-
-                    <tr class="table__row table__row--header">
-                        <td class="table__col">8. </td>
-                        <td class="table__col"> Tetiva 45x195x6000 mm </td>
-                        <td class="table__col table__col--amount"> 2</td>
-                        <td class="table__col"> 1400</td>
-                    </tr>
-
-                    <tr class="table__row table__row--header">
-                        <td class="table__col">9. </td>
-                        <td class="table__col"> Tetiva 45x195x6000 mm </td>
-                        <td class="table__col table__col--amount"> 2</td>
-                        <td class="table__col"> 1400</td>
-                    </tr>
-
-                    <tr class="table__row table__row--header">
-                        <td class="table__col">10. </td>
-                        <td class="table__col"> Tetiva 45x195x6000 mm </td>
-                        <td class="table__col table__col--amount"> 2</td>
-                        <td class="table__col"> 1400</td>
-                    </tr>
-                    <tr class="table__row table__row--header">
-                        <td class="table__col">11</td>. </td>
-                        <td class="table__col"> Tetiva 45x195x6000 mm </td>
-                        <td class="table__col table__col--amount"> 2</td>
-                        <td class="table__col"> 1400</td>
-                    </tr>
-                    <tr class="table__row table__row--header">
-                        <td class="table__col">12. </td>
-                        <td class="table__col"> Tetiva 45x195x6000 mm </td>
-                        <td class="table__col table__col--amount"> 2</td>
-                        <td class="table__col"> 1400</td>
-                    </tr>
-                    <tr class="table__row table__row--header">
-                        <td class="table__col">18. </td>
-                        <td class="table__col"> Tetiva 45x195x6000 mm </td>
-                        <td class="table__col table__col--amount"> 2</td>
-                        <td class="table__col"> 1400</td>
-                    </tr>
                 </tbody>
 
             </table>
@@ -145,11 +75,11 @@
             <h2 class="main__title title">Drawings</h2>
             <div class="drawings__wrapper">
                 <div class="drawings__front">
-                    <h3 class="title">Front view</h3>
+                    <h3 class="title drawings__title">Front view</h3>
                     <div class="drawings__area" id="front-view"></div>
                 </div>
                 <div class="drawings__front">
-                    <h3 class="title">Side view</h3>
+                    <h3 class="title drawings__title">Side view</h3>
                     <div class="drawings__area" id="side-view"></div>
                 </div>
             </div>
@@ -157,15 +87,14 @@
 
     </main>
     <footer class="page__footer footer">
-        <p class="footer__text"></p>
+        <p class="footer__text">Made fo ESK</p>
     </footer>
 
-    <section class="modal settings">
+    <section class="modal modal--closed settings">
         <div class="modal__header">
             <h2 class="modal__title title">Settings</h2>
             <button class="button modal__close">Close window</button>
         </div>
-
         <form class="settings__form form">
             <table class="settings__table table" id="settings-table">
                 <thead class="table__header">

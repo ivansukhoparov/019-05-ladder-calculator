@@ -1,0 +1,11 @@
+.modal {
+
+    &--opened {
+        display: block;
+    }
+
+    &--closed {
+        display: none;
+    }
+
+}

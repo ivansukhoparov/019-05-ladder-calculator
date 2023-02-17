@@ -1,3 +1,8 @@
+p {
+  margin: 0;
+  padding: 0;
+}
+
 td {
   border: 1px solid #8a8a8a;
 }
@@ -8,5 +13,142 @@ table {
 
 .page {
   background-color: #ffffff;
+  margin: 0;
+  padding: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
 }
+
+.page__footer {
+  margin-top: auto;
+}
+
+.title {
+  padding: 20px;
+  margin: 0;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+}
+
+.modal--opened {
+  display: block;
+}
+.modal--closed {
+  display: none;
+}
+
+.menu {
+  padding: 18px 20px;
+  height: 58px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  border-bottom: 1px solid black;
+}
+
+.menu__button {
+  display: block;
+  width: 24px;
+  height: 24px;
+  border: none;
+  margin: 0 0 0 20px;
+  background: red;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+}
+
+.parameters {
+  padding: 20px;
+}
+
+.estimate__table {
+  margin: 20px;
+}
+
+.drawings__wrapper {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.drawings__title {
+  border-top: none;
+  border-bottom: none;
+  padding: 0;
+  margin: 0 0 10px 0;
+}
+
+.drawings__area {
+  display: block;
+  min-width: 280px;
+  min-height: 280px;
+  border: 1px solid #000;
+}
+
+.form {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.form__label {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.table__col {
+  padding: 7px;
+}
+
+.footer {
+  padding: 20px;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+/*.header {
+    outline: 5px solid red;
+    outline-offset: -5px;
+}
+
+.main {
+    outline: 5px solid rgb(0, 255, 13);
+    outline-offset: -5px;
+}
+
+
+.footer {
+    outline: 5px solid rgb(47, 0, 255);
+    outline-offset: -5px;
+}
+
+.modal {
+    outline: 5px solid rgb(217, 255, 0);
+    outline-offset: -5px;
+}
+
+section {
+    outline: 5px solid rgb(217, 255, 0);
+    outline-offset: -5px;
+}*/
 /*# sourceMappingURL=style.css.map */

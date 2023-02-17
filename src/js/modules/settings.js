@@ -39,6 +39,5 @@ setButton.addEventListener('click', (evt) => {
     setSettinds();
 })
 
-
 renderTable(data);
 

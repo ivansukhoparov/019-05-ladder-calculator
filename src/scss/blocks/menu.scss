@@ -1,0 +1,18 @@
+.menu {
+    padding: 18px 20px;
+    height: 58px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    border-bottom: 1px solid black;
+}
+
+.menu__button {
+    display: block;
+    width: 24px;
+    height: 24px;
+    border: none;
+    margin: 0 0 0 20px;
+    background: red;
+}
