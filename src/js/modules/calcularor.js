@@ -46,7 +46,5 @@ calculateButton.addEventListener('click', (evt) => {
     writeAmounts();
     calculateCosts();
     render_estimate.renderTable(data);
-    console.log(data);
-
 });
 

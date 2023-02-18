@@ -16,4 +16,20 @@
             display: none;
         }
     }
+
+    &--mat {
+        border-top: 2px solid $main-color;
+        font-weight: 700;
+    }
+
+    &--work {
+        font-weight: 700;
+    }
+
+
+    &--total {
+        border-top: 2px solid $main-color;
+        font-size: 20px;
+        font-weight: 700;
+    }
 }

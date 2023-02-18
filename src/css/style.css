@@ -319,6 +319,18 @@ table {
     display: none;
   }
 }
+.table__col--mat {
+  border-top: 2px solid rgb(36, 36, 36);
+  font-weight: 700;
+}
+.table__col--work {
+  font-weight: 700;
+}
+.table__col--total {
+  border-top: 2px solid rgb(36, 36, 36);
+  font-size: 20px;
+  font-weight: 700;
+}
 
 .footer {
   padding: 20px;
