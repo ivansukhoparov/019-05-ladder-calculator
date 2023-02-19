@@ -90,7 +90,7 @@ const createLine = function (x1, y1, x2, y2, area) {
     area.appendChild(board)
 };
 
-//  renderBlueprints (BO)
+//  renderBlueprints (BP)
 const renderSideBP = function (ladderHeight) {
     const canvasHeight = ladderHeight * BASE_HEIGHT + BASE_HEIGHT * 3;
     const canvasWidth = ladderHeight * BASE_DEPTH + BASE_DEPTH * 3;

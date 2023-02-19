@@ -44,9 +44,21 @@
 }
 
 .form__label {
-    text-transform: uppercase;
+
+    display: flex;
+    flex-direction: column;
 
     @media (min-width: $tablet-width) {
         min-width: 200px;
     }
+}
+
+.form__label-title {
+    font-size: 19px;
+    text-transform: uppercase;
+}
+
+.form__label-text {
+    font-size: 13px;
+    text-transform: none;
 }

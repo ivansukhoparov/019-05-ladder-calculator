@@ -297,12 +297,23 @@ table {
 }
 
 .form__label {
-  text-transform: uppercase;
+  display: flex;
+  flex-direction: column;
 }
 @media (min-width: 768px) {
   .form__label {
     min-width: 200px;
   }
+}
+
+.form__label-title {
+  font-size: 19px;
+  text-transform: uppercase;
+}
+
+.form__label-text {
+  font-size: 13px;
+  text-transform: none;
 }
 
 .table {
