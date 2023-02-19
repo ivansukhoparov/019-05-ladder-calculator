@@ -30,11 +30,11 @@
             <form class="parameters__form form">
                 <fieldset class="form__fieldset">
                     <label class="form__label">Number of steps, pc:</label>
-                    <input type="text" class="form__input" id="number-of-steps" placeholder="3" required>
+                    <input type="text" class="form__input" id="number-of-steps" placeholder="3" value="3" required>
                 </fieldset>
                 <fieldset class="form__fieldset">
                     <label class="form__label">Ladder length, m:</label>
-                    <input type="text" class="form__input" id="ladder-length" placeholder="3" required>
+                    <input type="text" class="form__input" id="ladder-length" placeholder="3" value="2" required>
                 </fieldset>
                 <input type="submit" class="button form__submit" id="parameters-submit" value="Calculate">
             </form>
@@ -66,13 +66,14 @@
             <h2 class="main__title title">Drawings</h2>
             <div class="drawings__wrapper">
                 <div class="drawings__side">
-                    <h3 class="title drawings__title">Front view</h3>
-                    <div class="drawings__area" id="front-view"></div>
-                </div>
-                <div class="drawings__side">
                     <h3 class="title drawings__title">Side view</h3>
                     <div class="drawings__area" id="side-view"></div>
                 </div>
+                <div class="drawings__side">
+                    <h3 class="title drawings__title">Front view</h3>
+                    <div class="drawings__area" id="front-view"></div>
+                </div>
+
             </div>
         </section>
 

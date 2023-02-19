@@ -1,4 +1,4 @@
-const SUPPORT_PITCH = 0.5;
+const SUPPORT_PITCH = 0.6;
 const SUPPORT_MIN_LENGTH = 0.3;
 const DECKING_BOARD_PER_STEP = 2;
 const METAL_CORNERS_PER_SUPPORT = 2;
@@ -17,7 +17,7 @@ const calculateFoundations = function (ladderLength) {
 }
 
 const calculateSupports = function (ladderLength, ladderHeight) {
-    return Math.ceil((SUPPORT_MIN_LENGTH + SUPPORT_MIN_LENGTH * ladderHeight) * calculateFoundations(ladderLength));
+    return Math.ceil((SUPPORT_MIN_LENGTH * ladderHeight) * calculateFoundations(ladderLength));
     //  return total length for all ladder supports in meters
 }
 

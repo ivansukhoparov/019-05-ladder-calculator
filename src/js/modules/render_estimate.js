@@ -18,7 +18,6 @@ const renderRow = function (number, materialName, amount, units, cost, special) 
     return row;
 }
 
-
 const renderTable = function (data) {
     const materialNames = data.materialName;
     const amounts = data.amounts;
@@ -44,7 +43,6 @@ const renderTable = function (data) {
     const total = totalMaterial + totalWork;
     row = renderRow('', '', 'ИТОГО:', '', total, 'table__col--total');
     targetTable.appendChild(row);
-
 }
 
 export default { renderTable }

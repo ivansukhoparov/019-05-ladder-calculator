@@ -1,6 +1,7 @@
 import calc_functions from "./calc_functions.js";
 import render_estimate from "./render_estimate.js";
 import dataSet from './dataSet.js';
+import svgJs from "./svg-js.js";
 
 const data = dataSet.dataSet;
 
@@ -41,10 +42,13 @@ const calculateCosts = function () {
 
 
 calculateButton.addEventListener('click', (evt) => {
+    const ladderHeight = heightInput.value;
+    const ladderLength = legthInput.value;
     evt.preventDefault();
     calculateAmount();
     writeAmounts();
     calculateCosts();
+    svgJs.draw(ladderHeight, ladderLength);
     render_estimate.renderTable(data);
 });
 

@@ -19,14 +19,19 @@
 
 .drawings__side {
     flex-grow: 1;
+    display: flex;
+    flex-direction: column;
 }
 
 
 
 .drawings__area {
-    display: block;
+
     min-width: 280px;
     min-height: 280px;
     border-radius: 5px;
     border: 2px solid $main-color;
+    display: flex;
+    width: 100%;
+    height: 100%;
 }
