@@ -3,5 +3,9 @@
 
     margin: 0;
     border-top: 1px solid $separator-color;
-    /*border-bottom: 1px solid black;*/
+
+    @media print {
+        border: none;
+        padding: 0 20px;
+    }
 }

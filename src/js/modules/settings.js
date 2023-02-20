@@ -1,7 +1,7 @@
-import dataSet from './dataSet.js';
+import { dataSet } from './dataSet.js';
 import validation from "./validation.js";
 import error from "./error.js";
-const data = dataSet.dataSet;
+
 
 const rowTemplate = document.querySelector('#settings-table-row').content.querySelector('.table__row');
 const targetTable = document.querySelector("#settings-table").querySelector('tbody');
@@ -18,10 +18,10 @@ const renderRow = function (number, materialName, price, units) {
     return row;
 }
 
-const renderTable = function (data) {
-    const materialNames = data.materialName;
-    const prices = data.prices;
-    const units = data.units;
+const renderTable = function (dataSet) {
+    const materialNames = dataSet.materialName;
+    const prices = dataSet.prices;
+    const units = dataSet.units;
 
     targetTable.textContent = '';
 
@@ -39,7 +39,7 @@ const setSettinds = function () {
         const validationPrice = validation.validationSettings(price);
 
         if (validationPrice === true) {
-            data.prices[index] = price;
+            dataSet.prices[index] = price;
 
         } else {
             error.showErrorTip(validationPrice, element, setButton, closeButton)
@@ -47,7 +47,7 @@ const setSettinds = function () {
 
         console.log(validationPrice)
     });
-    renderTable(data);
+    renderTable(dataSet);
 };
 
 
@@ -56,5 +56,5 @@ setButton.addEventListener('click', (evt) => {
     setSettinds();
 })
 
-renderTable(data);
+renderTable(dataSet);
 

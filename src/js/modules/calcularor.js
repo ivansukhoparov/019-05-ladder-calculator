@@ -1,11 +1,9 @@
 import calc_functions from "./calc_functions.js";
 import render_estimate from "./render_estimate.js";
-import dataSet from './dataSet.js';
+import { dataSet } from './dataSet.js';
 import svgJs from "./svg-js.js";
 import validation from "./validation.js";
 import error from "./error.js";
-
-const data = dataSet.dataSet;
 
 //  select form elements to get information to calculate
 const heightInput = document.querySelector('#number-of-steps');
@@ -27,17 +25,17 @@ const calculateAmount = function () {
 
 //  store amounts to object data
 const writeAmounts = function () {
-    data.amounts[0] = foundationBlocks;
-    data.amounts[1] = decking;
-    data.amounts[2] = support;
-    data.amounts[3] = support;
-    data.amounts[4] = metalCorners;
-    data.amounts[5] = screws;
+    dataSet.amounts[0] = foundationBlocks;
+    dataSet.amounts[1] = decking;
+    dataSet.amounts[2] = support;
+    dataSet.amounts[3] = support;
+    dataSet.amounts[4] = metalCorners;
+    dataSet.amounts[5] = screws;
 };
 
 const calculateCosts = function () {
-    data.costs.forEach((element, index) => {
-        data.costs[index] = data.amounts[index] * data.prices[index];
+    dataSet.costs.forEach((element, index) => {
+        dataSet.costs[index] = dataSet.amounts[index] * dataSet.prices[index];
     })
 };
 
@@ -54,7 +52,7 @@ calculateButton.addEventListener('click', (evt) => {
         writeAmounts();
         calculateCosts();
         svgJs.draw(ladderHeight, ladderLength);
-        render_estimate.renderTable(data);
+        render_estimate.renderTable(dataSet);
     } else {
         error.showErrorTip(validationHeight, heightInput, calculateButton)
         error.showErrorTip(validationLength, legthInput, calculateButton)

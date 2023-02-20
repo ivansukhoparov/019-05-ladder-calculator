@@ -1,4 +1,4 @@
-const CURRENCY = 'руб.';
+import { CURRENCY } from './dataSet.js'
 
 const rowTemplate = document.querySelector('#estimate-table-row').content.querySelector('.table__row');
 const targetTable = document.querySelector("#estimate-table").querySelector('tbody');

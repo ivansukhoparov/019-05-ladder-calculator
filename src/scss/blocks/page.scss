@@ -11,10 +11,28 @@
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
+
+    @media print {
+        box-shadow: none;
+
+    }
 }
 
 
 .page__footer {
 
     margin-top: auto;
+
+    @media print {
+        display: none;
+
+    }
+}
+
+.page__header {
+
+    @media print {
+        display: none;
+
+    }
 }

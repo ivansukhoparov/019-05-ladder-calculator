@@ -41,4 +41,9 @@ const dataSet = {
     ]
 };
 
-export default { dataSet };
+const HEIGHT_VALUE_ERROR = 'Введите целое число от 1 до 7';
+const LENGTH_VALUE_ERROR = 'Введите целое число от 0 до 6';
+const PRICE_ERROR = 'ВВЕДИТЕ ЧИСЛО';
+const CURRENCY = 'руб.';
+
+export { dataSet, HEIGHT_VALUE_ERROR, LENGTH_VALUE_ERROR, PRICE_ERROR, CURRENCY };
