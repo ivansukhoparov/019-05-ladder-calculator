@@ -31,7 +31,8 @@
                 <fieldset class="form__fieldset">
                     <label class="form__label">
                         <span class="form__label-title">Number of steps, pc:</span>
-                        <span class="form__label-text">Enter number of steps from 1 to 7</span>
+                        <span class="form__label-text">Whole number from 1 to 7</span>
+
                     </label>
                     <input type="text" class="form__input" id="number-of-steps" autocomplete="off" placeholder="3"
                         required>
@@ -138,6 +139,13 @@
                     required>
             </td>
         </tr>
+    </template>
+
+    <template id="error">
+        <div class="error error--hidden">
+            <span> Введите целое число от 1 до 7</span>
+            <button class="button error__close"></button>
+        </div>
     </template>
 
 

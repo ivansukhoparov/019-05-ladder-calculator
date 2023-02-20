@@ -73,10 +73,12 @@ table {
 .button:hover {
   border-color: rgba(36, 36, 36, 0.6);
   color: rgba(36, 36, 36, 0.6);
+  box-shadow: 0 0 5px 2px #afafaf;
 }
 .button:active {
   border-color: rgba(36, 36, 36, 0.3);
   color: rgba(36, 36, 36, 0.3);
+  box-shadow: 0 0 2px 1px #dddddd;
 }
 
 .modal {
@@ -103,8 +105,7 @@ table {
   display: flex;
   justify-content: center;
   align-items: center;
-  border: 1.5px solid rgb(36, 36, 36);
-  border-radius: 50%;
+  border: none;
   cursor: pointer;
 }
 .modal__close::before, .modal__close::after {
@@ -122,9 +123,11 @@ table {
   transform: rotate(-45deg);
 }
 .modal__close:hover {
+  box-shadow: none;
   opacity: 0.5;
 }
 .modal__close:active {
+  box-shadow: none;
   opacity: 0.3;
 }
 
@@ -291,9 +294,11 @@ table {
 .form__input:hover {
   border-color: rgba(36, 36, 36, 0.6);
   color: rgba(36, 36, 36, 0.6);
+  box-shadow: 0 0 5px 2px #afafaf;
 }
 .form__input:focus {
   outline: none;
+  box-shadow: 0 0 5px 2px #afafaf;
 }
 
 .form__label {
@@ -314,6 +319,10 @@ table {
 .form__label-text {
   font-size: 13px;
   text-transform: none;
+}
+
+.form__error {
+  box-shadow: 0 0 5px 2px #ff0303;
 }
 
 .table {
@@ -346,6 +355,9 @@ table {
   font-size: 20px;
   font-weight: 700;
 }
+.table__col--price {
+  padding: 0;
+}
 
 .footer {
   padding: 20px;
@@ -367,7 +379,8 @@ table {
 
 .settings__input {
   width: 40px;
-  padding: 0;
+  padding: 7px;
+  border-radius: 0;
   font-size: 16px;
   text-align: left;
   border: none;
@@ -396,6 +409,63 @@ table {
   }
 }
 
+.error {
+  border: 1px solid #b30000;
+  padding: 10px;
+  box-shadow: 0 0 5px 2px #b30000;
+  position: absolute;
+  background: #ffffff;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.error::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: -20px;
+  right: 0;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0 20px 20px 20px;
+  border-color: transparent transparent #b30000 transparent;
+}
+
+.error__close {
+  width: 30px;
+  height: 30px;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.error__close::before, .error__close::after {
+  content: "";
+  display: block;
+  background-color: rgb(36, 36, 36);
+  width: 13px;
+  height: 1.5px;
+  position: absolute;
+}
+.error__close::before {
+  transform: rotate(45deg);
+}
+.error__close::after {
+  transform: rotate(-45deg);
+}
+.error__close:hover {
+  box-shadow: none;
+  opacity: 0.5;
+}
+.error__close:active {
+  box-shadow: none;
+  opacity: 0.3;
+}
+
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -421,7 +491,7 @@ table {
 
 
 .footer {
-    outline: 5px solid rgb(47, 0, 255);
+    outline: 5px solid #b30000;
     outline-offset: -5px;
 }
 

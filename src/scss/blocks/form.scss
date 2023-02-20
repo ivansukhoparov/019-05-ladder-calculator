@@ -36,10 +36,12 @@
     &:hover {
         border-color: $main-hover;
         color: $main-hover;
+        box-shadow: 0 0 5px 2px #afafaf;
     }
 
     &:focus {
         outline: none;
+        box-shadow: 0 0 5px 2px #afafaf;
     }
 }
 
@@ -61,4 +63,8 @@
 .form__label-text {
     font-size: 13px;
     text-transform: none;
+}
+
+.form__error {
+    box-shadow: 0 0 5px 2px #ff0303;
 }

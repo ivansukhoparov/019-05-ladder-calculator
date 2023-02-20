@@ -12,10 +12,14 @@
     &:hover {
         border-color: $main-hover;
         color: $main-hover;
+        box-shadow: 0 0 5px 2px #afafaf;
     }
 
     &:active {
         border-color: $main-active;
         color: $main-active;
+        box-shadow: 0 0 2px 1px #dddddd;
     }
+
+
 }

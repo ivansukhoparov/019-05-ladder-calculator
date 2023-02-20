@@ -2,6 +2,8 @@ import calc_functions from "./calc_functions.js";
 import render_estimate from "./render_estimate.js";
 import dataSet from './dataSet.js';
 import svgJs from "./svg-js.js";
+import validation from "./validation.js";
+import error from "./error.js";
 
 const data = dataSet.dataSet;
 
@@ -9,7 +11,6 @@ const data = dataSet.dataSet;
 const heightInput = document.querySelector('#number-of-steps');
 const legthInput = document.querySelector('#ladder-length');
 const calculateButton = document.querySelector('#parameters-submit');
-
 //  declare variables for each material in which calculated values will be stored
 let foundationBlocks, decking, support, metalCorners, screws;
 
@@ -42,13 +43,23 @@ const calculateCosts = function () {
 
 
 calculateButton.addEventListener('click', (evt) => {
+    evt.preventDefault();
     const ladderHeight = heightInput.value;
     const ladderLength = legthInput.value;
-    evt.preventDefault();
-    calculateAmount();
-    writeAmounts();
-    calculateCosts();
-    svgJs.draw(ladderHeight, ladderLength);
-    render_estimate.renderTable(data);
+    const validationHeight = validation.validationLadderHeight(ladderHeight)
+    const validationLength = validation.validationLadderLength(ladderLength)
+    if (validationHeight === true && validationLength === true) {
+        evt.preventDefault();
+        calculateAmount();
+        writeAmounts();
+        calculateCosts();
+        svgJs.draw(ladderHeight, ladderLength);
+        render_estimate.renderTable(data);
+    } else {
+        error.showErrorTip(validationHeight, heightInput, calculateButton)
+        error.showErrorTip(validationLength, legthInput, calculateButton)
+    }
+
+
 });
 

@@ -1,23 +1,29 @@
-.modal {
-    top: 0;
-    left: 0;
+.error {
+    border: 1px solid $error-color;
+    padding: 10px;
+    box-shadow: 0 0 5px 2px $error-color;
     position: absolute;
-    width: 100%;
-    height: 100%;
-    background-color: $darkned-background;
+    background: $main-background;
     display: flex;
+    align-items: center;
+    gap: 20px;
 
-    &--closed {
-        display: none;
+    &::before {
+        content: '';
+        display: block;
+        position: absolute;
+        top: -20px;
+        right: 0;
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 0 20px 20px 20px;
+        border-color: transparent transparent $error-color transparent;
     }
 
-    &--open {
-        height: 100vh;
-        overflow: hidden;
-    }
 }
 
-.modal__close {
+.error__close {
     width: 30px;
     height: 30px;
     padding: 0;
@@ -25,6 +31,7 @@
     justify-content: center;
     align-items: center;
     border: none;
+    border-radius: 50%;
     cursor: pointer;
 
     &::before,
@@ -51,27 +58,8 @@
     }
 
     &:active {
-
         box-shadow: none;
         opacity: 0.3;
     }
 
-}
-
-.modal__window {
-    margin: auto;
-    background: $main-background;
-    padding: 20px;
-}
-
-.modal__header {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    margin: 0 0 20px 0;
-}
-
-.modal__title {
-    padding: 0;
-    border: none;
 }

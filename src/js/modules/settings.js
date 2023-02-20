@@ -1,9 +1,12 @@
 import dataSet from './dataSet.js';
+import validation from "./validation.js";
+import error from "./error.js";
 const data = dataSet.dataSet;
 
 const rowTemplate = document.querySelector('#settings-table-row').content.querySelector('.table__row');
 const targetTable = document.querySelector("#settings-table").querySelector('tbody');
 const setButton = document.querySelector('#set-settings');
+const closeButton = document.querySelector('#close-settings');
 
 const renderRow = function (number, materialName, price, units) {
     const row = rowTemplate.cloneNode(true);
@@ -30,11 +33,23 @@ const renderTable = function (data) {
 
 const setSettinds = function () {
     const prices = targetTable.querySelectorAll('.settings__input');
+
     prices.forEach((element, index) => {
-        data.prices[index] = element.value;
+        const price = element.value
+        const validationPrice = validation.validationSettings(price);
+
+        if (validationPrice === true) {
+            data.prices[index] = price;
+
+        } else {
+            error.showErrorTip(validationPrice, element, setButton, closeButton)
+        }
+
+        console.log(validationPrice)
     });
     renderTable(data);
 };
+
 
 setButton.addEventListener('click', (evt) => {
     evt.preventDefault();
