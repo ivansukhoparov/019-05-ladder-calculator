@@ -6,7 +6,6 @@
 *.log
 *.pdf
 *.psd
-*.json
 *.sublime*
 build/
 node_modules/

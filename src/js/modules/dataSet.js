@@ -1,11 +1,11 @@
 const dataSet = {
 	materialName: [
-		'Фундаментный блок ФБС 2-2-3',
-		'Террасная доска 36x145 мм',
-		'Доска 45x195 мм для тетивы',
-		'Доска 45x95 мм для тетивы',
-		'Угловая пластина 90x90 мм',
-		'Саморезы оцинкованные 4,2x50 мм'
+		'Foundation blocks 2-2-4',
+		'Decking board 36x145 mm',
+		'Support board 45x195 mm',
+		'Support board  45x95 mm',
+		'Metal corner 90x90 mm',
+		'Screws 4,2x50 mm'
 	],
 	amounts: [
 		'0',
@@ -16,20 +16,20 @@ const dataSet = {
 		'0'
 	],
 	prices: [
-		'296',
-		'167',
+		'325',
+		'168',
 		'200',
-		'108',
+		'100',
 		'108',
 		'2'
 	],
 	units: [
-		'шт.',
-		'м.п.',
-		'м.п.',
-		'м.п.',
-		'шт.',
-		'шт.'
+		'pc',
+		'm',
+		'm',
+		'm',
+		'pc',
+		'pc'
 	],
 	costs: [
 		'0',
@@ -41,9 +41,9 @@ const dataSet = {
 	]
 };
 
-const HEIGHT_VALUE_ERROR = 'Введите целое число от 1 до 7';
-const LENGTH_VALUE_ERROR = 'Введите целое число от 0 до 6';
-const PRICE_ERROR = 'ВВЕДИТЕ ЧИСЛО';
-const CURRENCY = 'руб.';
+const HEIGHT_VALUE_ERROR = 'Enter whole number from 1 to 7';
+const LENGTH_VALUE_ERROR = 'Length must be a number from 0 to 6';
+const PRICE_ERROR = 'Price must be a number';
+const CURRENCY = '$';
 
 export { dataSet, HEIGHT_VALUE_ERROR, LENGTH_VALUE_ERROR, PRICE_ERROR, CURRENCY };
