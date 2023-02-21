@@ -2,6 +2,9 @@
 .idea
 .vscode
 .babelrc
+.stylelintrc.json
+.eslintrc.js
+webpack.config.js
 *.ai
 *.log
 *.pdf

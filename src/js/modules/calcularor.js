@@ -35,7 +35,8 @@ const writeAmounts = function () {
 
 const calculateCosts = function () {
 	dataSet.costs.forEach((element, index) => {
-		dataSet.costs[index] = dataSet.amounts[index] * dataSet.prices[index];
+		const result = dataSet.amounts[index] * dataSet.prices[index]
+		dataSet.costs[index] = result.toFixed(1);
 	});
 };
 

@@ -16,12 +16,12 @@ const dataSet = {
 		'0'
 	],
 	prices: [
-		'325',
-		'168',
-		'200',
-		'100',
-		'108',
-		'2'
+		'3.1',
+		'2.3',
+		'2.1',
+		'1.5',
+		'1.5',
+		'0.2'
 	],
 	units: [
 		'pc',
@@ -45,5 +45,10 @@ const HEIGHT_VALUE_ERROR = 'Enter whole number from 1 to 7';
 const LENGTH_VALUE_ERROR = 'Length must be a number from 0 to 6';
 const PRICE_ERROR = 'Price must be a number';
 const CURRENCY = '$';
+const TOTAL_PHRASE = {
+	material: 'Total by materials',
+	work: 'Total by work',
+	all: 'Total'
+}
 
-export { dataSet, HEIGHT_VALUE_ERROR, LENGTH_VALUE_ERROR, PRICE_ERROR, CURRENCY };
+export { dataSet, HEIGHT_VALUE_ERROR, LENGTH_VALUE_ERROR, PRICE_ERROR, CURRENCY, TOTAL_PHRASE };

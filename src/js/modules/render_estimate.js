@@ -1,4 +1,4 @@
-import { CURRENCY } from './dataSet.js';
+import { CURRENCY, TOTAL_PHRASE } from './dataSet.js';
 
 const rowTemplate = document.querySelector('#estimate-table-row').content.querySelector('.table__row');
 const targetTable = document.querySelector('#estimate-table').querySelector('tbody');
@@ -32,16 +32,16 @@ const renderTable = function (data) {
 		targetTable.appendChild(row);
 	});
 
-	const totalMaterial = data.costs.slice().reduce((a, b) => a + b);
-	row = renderRow('', 'Итого по материалам', '', '', totalMaterial, 'table__col--mat');
+	const totalMaterial = data.costs.slice().reduce((a, b) => a * 1 + b * 1);
+	row = renderRow('', TOTAL_PHRASE.material, '', '', totalMaterial.toFixed(1), 'table__col--mat');
 	targetTable.appendChild(row);
 
 	const totalWork = Math.ceil(totalMaterial * 0.9);
-	row = renderRow('', 'Итого по монтажу', '', '', totalWork, 'table__col--work');
+	row = renderRow('', TOTAL_PHRASE.work, '', '', totalWork.toFixed(1), 'table__col--work');
 	targetTable.appendChild(row);
 
 	const total = totalMaterial + totalWork;
-	row = renderRow('', '', 'ИТОГО:', '', total, 'table__col--total');
+	row = renderRow('', '', TOTAL_PHRASE.all, '', total.toFixed(1), 'table__col--total');
 	targetTable.appendChild(row);
 };
 

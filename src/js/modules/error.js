@@ -27,7 +27,6 @@ const showErrorTip = function (message, target, submitButton, closeButton) {
 		const targetCoords = target.getBoundingClientRect();
 		errorTip.style.left = targetCoords.x + targetCoords.width - messageBox.width + 'px';
 		errorTip.style.top = targetCoords.y + targetCoords.height + 18 + 'px';
-		console.log(targetCoords);
 	}
 };
 

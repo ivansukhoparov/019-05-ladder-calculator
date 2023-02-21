@@ -6,9 +6,9 @@ const SCREWS_PER_DECKING = 2;
 const SCREWS_PER_CORNER = 8;
 
 /*  Group of functions that calculate amount of material for ladder
-    All functions received one or two parameters:
-    ladderLength : length of step in meters, number
-    ladderHeight : count of steps, number
+	All functions received one or two parameters:
+	ladderLength : length of step in meters, number
+	ladderHeight : count of steps, number
 */
 
 const calculateFoundations = function (ladderLength) {

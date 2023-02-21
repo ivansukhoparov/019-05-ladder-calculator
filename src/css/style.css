@@ -510,6 +510,7 @@ table {
   box-shadow: none;
   opacity: 0.5;
 }
+
 .error__close:active {
   box-shadow: none;
   opacity: 0.3;
@@ -527,30 +528,3 @@ table {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
-
-/* .header {
-    outline: 5px solid red;
-    outline-offset: -5px;
-}
-
-.main {
-    outline: 5px solid rgb(0, 255, 13);
-    outline-offset: -5px;
-}
-
-
-.footer {
-    outline: 5px solid #b30000;
-    outline-offset: -5px;
-}
-
-.modal {
-    outline: 5px solid rgb(217, 255, 0);
-    outline-offset: -5px;
-}
-
-section {
-    outline: 5px solid rgb(217, 255, 0);
-    outline-offset: -5px;
-} */
-/*# sourceMappingURL=style.css.map */
